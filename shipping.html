@@ -1,0 +1,79 @@
+<div class="row">
+	<div class="col-sm-12 heading">
+		Shipping information
+	</div>
+</div>
+<div class="row">
+	<div class="col-sm-6 adress">
+		<ul>
+			<li>Taras Shevchenko</li>
+			<li>Unit 2 Green Mount Park</li>
+			<li>Halifax</li>
+			<li>HX1 5QN</li>
+			<li>Phone: +3 8097 132-45-67</li>
+		</ul>
+		<a href="#">Edit Address</a>
+		<a href="#">Add New</a>
+	</div>
+	<div class="col-sm-6 adress" id="googleMap"></div>
+</div>
+<div class="row">
+	<div class="col-sm-12 heading">Shipping Method</div>
+</div>
+<div class="row">
+	<!--<div class="radio col-sm-6 col-xs-12 shipping-method">
+		<label>
+			<input type="radio" name="radio" id="radio-1" checked>
+				<span>Standart Delivery</span>
+		</label>
+		<span class="price free">Free</span>
+		<div class="method-descr">Freebie checkout form of the third step in sketchapp. Feel free to download and use it for your project. </div>
+	</div>
+	<div class="radio col-sm-6 col-xs-12 shipping-method">
+		<label>
+			<input type="radio" id="radio-1" name="radio" id="optionsRadios2">
+				<span>Fast Delivery</span>
+		</label>
+		<p class="price">8.00 uah</p>
+		<div class="method-descr">Freebie checkout form of the third step in sketchapp. Feel free to download and use it for your project. </div>
+	</div>-->
+	<div class="radio col-sm-6 col-xs-12 shipping-method">
+		<input id="radio-1" name="radio" type="radio">
+		<label for="radio-1" class="radio-label"><span class="speed">Standart Delivery </span><span class="price free">Free</span></label>
+		<div class="method-descr">Freebie checkout form of the third step in sketchapp. Feel free to download and use it for your project. </div>
+	</div>
+	<div class="radio col-sm-6 col-xs-12 shipping-method">
+		<input id="radio-2" name="radio" type="radio">
+		<label for="radio-2" class="radio-label"><span class="speed">Fast Delivery </span><span class="price">8.00 uah</span></label>
+		<div class="method-descr">Freebie checkout form of the third step in sketchapp. Feel free to download and use it for your project. </div>
+	</div>
+</div>
+<div class="row">
+	<div class="col-sm-4 desktop">
+		<a href="#" class="return-to">Back to Customer Info</a>
+	</div>
+	<div class="col-sm-5 col-sm-offset-3">
+		<button type="submit" class="btn btn-primary">Continue to Payment</button>
+	</div>
+	<div class="col-sm-4 mobile text-center">
+		<a href="#" class="return-to">Return to shop</a>
+	</div>
+</div>
+
+<script>
+	function myMap() {
+		var mapOptions = {
+			center:new google.maps.LatLng(51.508742,-0.120850),
+			zoom:5,
+			panControl: false,
+			zoomControl: true,
+			mapTypeControl: false,
+			scaleControl: false,
+			streetViewControl: false,
+			overviewMapControl: false,
+			rotateControl: false,
+		};
+		var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
+	};
+	myMap();
+</script>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="radio.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Flabers</title>
+</head>
+<body>
+
+<div class="container">
+	<div class="row">
+		<div class="col-xs-12 col-sm-4 navigation text-center navigation-actual">01 Customer info</div>
+		<div class="col-xs-12 col-sm-4 navigation text-center ">02 Shipping info</div>
+		<div class="col-xs-12 col-sm-4 navigation text-center ">03 Payment selection</div>
+	</div>
+	<div id="content">
+	<div class="row">
+		<div class="col-sm-12 heading">Customer information</div>
+	</div>
+	<form id="form">
+		<div class="row">
+			<div class="col-sm-6">
+				<div class="form-group">
+					<label class="form-label" for="firstNameForm">First name</label>
+					<input type="text" class="form-control" required pattern="^[a-zA-Z][a-zA-Z]{2,15}$" id="firstNameForm">
+				</div>
+			</div>
+			<div class="col-sm-6">
+				<div class="form-group">
+					<label class="form-label" for="lastNameForm">Last name</label>
+					<input type="text" class="form-control" id="lastNameForm">
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12">
+				<div class="form-group">
+					<label class="form-label" for="adressForm">ADdress</label>
+					<input type="text" class="form-control" id="adressForm">
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-6">
+				<div class="form-group">
+					<label class="form-label" for="countryForm">Country</label>
+					<input type="text" class="form-control" id="countryForm" placeholder="Select your Country">
+				</div>
+			</div>
+			<div class="col-sm-6">
+				<div class="form-group">
+					<label class="form-label" for="cityForm">City</label>
+					<input type="text" class="form-control" id="cityForm">
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-6 desktop">
+				<label class="form-label" for="postalCodeForm">Postal code</label>
+				<div class="input-group">
+					<input type="text" class="form-control" id="postalCodeForm">
+					<div class="input-group-addon">FIND</div>
+				</div>
+			</div>
+			<div class="col-sm-6">
+				<div class="form-group">
+					<label class="form-label" for="phoneForm">Phone</label>
+					<input type="tel" required pattern="[\+]\d{1}[\s]\d{1}[\(]\d{3}[\)][\s]\d{3}[\-]\d{2}[\-]\d{2}" class="form-control" id="phoneForm">
+				</div>
+			</div>
+			<div class="col-sm-6 mobile">
+				<label class="form-label" for="postalCodeForm">Postal code</label>
+				<div class="input-group">
+					<input type="text" class="form-control" id="postalCodeForm">
+					<div class="input-group-addon">FIND</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-4 desktop">
+				<a href="#" class="return-to">Return to shop</a>
+			</div>
+			<div class="col-sm-5 col-sm-offset-3">
+				<button type="submit" class="btn btn-primary">Continue to shipping</button>
+			</div>
+			<div class="col-sm-4 mobile text-center">
+				<a href="#" class="return-to">Return to shop</a>
+			</div>
+		</div>
+	</form>
+</div>
+</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAQU5rXr7TbZ72O_W98bEiLXBYKok_owrg"></script>
+<script src="mask.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
